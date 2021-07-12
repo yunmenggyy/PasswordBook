@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.Window
 import android.view.WindowManager
 import androidx.lifecycle.Observer
+import com.guanyangyi.passwordbook.activity.PasswordCheckActivity
 import com.guanyangyi.passwordbook.activity.SetInitPasswordsActivity
 import com.guanyangyi.passwordbook.base.BaseActivity
 import com.guanyangyi.passwordbook.base.BaseVM
@@ -36,7 +37,7 @@ class SplashActivity: BaseActivity<SplashViewModel> () {
                     return@observe
                 }
                 finish()
-                IntentUtils.startActivity(this, Intent(this, MainActivity::class.java) )
+                IntentUtils.startActivity(this, Intent(this, PasswordCheckActivity::class.java) )
             })
         window.decorView.postDelayed({
             mViewModel?.startQuery()

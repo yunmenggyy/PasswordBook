@@ -53,4 +53,8 @@ dependencies {
 
     //MMKV
     implementation 'com.tencent:mmkv-static:1.2.10'
+
+    //验证码
+    implementation 'com.longer:verifycode:1.0.4'
+
 }

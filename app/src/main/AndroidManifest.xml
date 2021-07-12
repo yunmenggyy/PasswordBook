@@ -23,6 +23,7 @@
 
         <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
         <activity android:name=".activity.SetInitPasswordsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PasswordCheckActivity" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
