@@ -2,5 +2,6 @@
     <string name="app_name">密码本</string>
     <string name="verify_title">验证密码</string>
     <string name="doorlock_des">请输入进入App的密码！</string>
-
+    <string name="set_init_password">请设置6位每次打开App的密码！</string>
+    <string name="sure">确定</string>
 </resources>
