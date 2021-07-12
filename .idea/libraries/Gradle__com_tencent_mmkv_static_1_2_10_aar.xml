@@ -1,12 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.tencent:mmkv-static:1.2.10@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/28c4ea9180b8b80a61f1a42032da3416/jetified-mmkv-static-1.2.10/res" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/9c76526859cb02155008b7dbfea7f32a/jetified-mmkv-static-1.2.10/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/9c76526859cb02155008b7dbfea7f32a/jetified-mmkv-static-1.2.10/res" />
-      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/936ac9293387ba98f6ebad34a306a13f/jetified-mmkv-static-1.2.10/res" />
-      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/8c8dc72037f39175417da532f69b0532/jetified-mmkv-static-1.2.10/res" />
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/8c8dc72037f39175417da532f69b0532/jetified-mmkv-static-1.2.10/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/8c8dc72037f39175417da532f69b0532/jetified-mmkv-static-1.2.10/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/9c76526859cb02155008b7dbfea7f32a/jetified-mmkv-static-1.2.10/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.tencent/mmkv-static/1.2.10/be5019106c8211e703f503427c18895febadd567/mmkv-static-1.2.10-javadoc.jar!/" />
