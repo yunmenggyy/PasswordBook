@@ -31,12 +31,16 @@ class SplashActivity: BaseActivity<SplashViewModel> () {
         mViewModel?.hasSetPasswordLiveData?.observe(this,
             { hasSetPassword ->
                 if (hasSetPassword == false){
+                    finish()
                    IntentUtils.startActivity(this, Intent(this, SetInitPasswordsActivity::class.java) )
+                    return@observe
                 }
+                finish()
+                IntentUtils.startActivity(this, Intent(this, MainActivity::class.java) )
             })
         window.decorView.postDelayed({
             mViewModel?.startQuery()
-        }, 1500)
+        }, 500)
     }
 
 }

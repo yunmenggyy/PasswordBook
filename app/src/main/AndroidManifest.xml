@@ -11,7 +11,9 @@
         android:name=".App"
         android:theme="@style/Theme.PassWordBook">
 
-        <activity android:name=".SplashActivity" android:screenOrientation="portrait">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/StartAppTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

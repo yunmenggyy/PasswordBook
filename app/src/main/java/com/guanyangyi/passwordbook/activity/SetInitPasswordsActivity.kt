@@ -3,17 +3,19 @@ package com.guanyangyi.passwordbook.activity
 import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import com.guanyangyi.passwordbook.R
 import com.guanyangyi.passwordbook.base.BaseActivity
 import com.guanyangyi.passwordbook.base.BaseVM
 import com.guanyangyi.passwordbook.utils.ToastUtil
+import com.guanyangyi.passwordbook.viewmodel.SetInitPasswordsViewModel
 
-class SetInitPasswordsActivity: BaseActivity<BaseVM>() {
+class SetInitPasswordsActivity: BaseActivity<SetInitPasswordsViewModel>() {
 
     var mEditText: EditText? = null
 
     override fun getLayoutId(): Int = R.layout.activity_set_init_password
+
+    override fun initViewModel(): SetInitPasswordsViewModel? = SetInitPasswordsViewModel()
 
     override fun initData() {
         mEditText = findViewById(R.id.id_password_editText)
@@ -28,8 +30,9 @@ class SetInitPasswordsActivity: BaseActivity<BaseVM>() {
                 ToastUtil.showToast(this, "密码的长度需要6位！！！")
                 return@setOnClickListener
             }
+            mViewModel?.saveAppPassword(this, mEditText!!.text.toString())
         }
     }
 
-    override fun initViewModel(): BaseVM? = null
+
 }
