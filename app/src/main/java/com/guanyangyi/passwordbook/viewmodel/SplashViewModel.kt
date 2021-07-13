@@ -1,11 +1,12 @@
 package com.guanyangyi.passwordbook.viewmodel
 
+import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import com.guanyangyi.passwordbook.base.BaseVM
 import com.guanyangyi.passwordbook.utils.Constants.HAS_SET_INIT_PASSWORD
 import com.guanyangyi.passwordbook.utils.MmkvUtils
 
-class SplashViewModel: BaseVM() {
+class SplashViewModel(): BaseVM() {
 
     var hasSetPasswordLiveData : MutableLiveData<Boolean> = MutableLiveData()
 

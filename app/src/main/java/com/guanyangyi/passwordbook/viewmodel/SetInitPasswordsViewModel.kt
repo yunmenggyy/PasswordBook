@@ -13,7 +13,7 @@ import com.guanyangyi.passwordbook.utils.IntentUtils
 import com.guanyangyi.passwordbook.utils.LogUtil
 import com.guanyangyi.passwordbook.utils.MmkvUtils
 
-class SetInitPasswordsViewModel: BaseVM() {
+class SetInitPasswordsViewModel(): BaseVM() {
 
     fun saveAppPassword(context: Context, passwords: String ){
         val boolean = MmkvUtils.mmkv.encode(HAS_SET_INIT_PASSWORD, true)

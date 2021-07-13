@@ -4,4 +4,6 @@
     <string name="doorlock_des">请输入进入App的密码！</string>
     <string name="set_init_password">请设置6位每次打开App的密码！</string>
     <string name="sure">确定</string>
+    <string name="add">新建分类</string>
+    <string name="search">搜索</string>
 </resources>

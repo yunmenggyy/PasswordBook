@@ -1,5 +1,6 @@
 package com.guanyangyi.passwordbook.base
 
+import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
@@ -12,6 +13,7 @@ abstract class BaseActivity<VM:BaseVM> :AppCompatActivity(){
         supportActionBar?.hide()
         setContentView(getLayoutId())
         mViewModel = initViewModel()
+        initView()
         initData()
     }
 
@@ -22,6 +24,8 @@ abstract class BaseActivity<VM:BaseVM> :AppCompatActivity(){
 
 
     abstract fun initData()
+
+    abstract fun initView()
 
     abstract fun initViewModel(): VM?
 }

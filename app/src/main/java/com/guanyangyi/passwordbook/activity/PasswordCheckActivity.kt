@@ -1,5 +1,6 @@
 package com.guanyangyi.passwordbook.activity
 
+import android.content.Context
 import android.content.Intent
 import android.text.TextUtils
 import android.view.inputmethod.InputMethodManager
@@ -18,7 +19,7 @@ class PasswordCheckActivity: BaseActivity<PasswordCheckViewModel>() {
         return R.layout.pair_code_verify2
     }
 
-    override fun initData() {
+    override fun initView() {
         val phoneCode = findViewById<PhoneCode>(R.id.phonecode)
         phoneCode.requestFocus()
         phoneCode.hideKeyboard()
@@ -33,10 +34,10 @@ class PasswordCheckActivity: BaseActivity<PasswordCheckViewModel>() {
                 if (!TextUtils.isEmpty(storedPassword) && storedPassword!! == verificationCode) {
                     finish()
                     IntentUtils.startActivity(
-                        this@PasswordCheckActivity, Intent(
+                            this@PasswordCheckActivity, Intent(
                             this@PasswordCheckActivity,
                             MainActivity::class.java
-                        )
+                    )
                     )
                     return
                 }
@@ -62,10 +63,14 @@ class PasswordCheckActivity: BaseActivity<PasswordCheckViewModel>() {
                 lastClickTime = 0
             }
         }
+    }
 
+    override fun initData() {
     }
 
     override fun initViewModel(): PasswordCheckViewModel {
        return PasswordCheckViewModel()
     }
+
+
 }

@@ -1,8 +1,10 @@
 package com.guanyangyi.passwordbook.activity
 
+import android.content.Context
 import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toolbar
 import com.guanyangyi.passwordbook.R
 import com.guanyangyi.passwordbook.base.BaseActivity
 import com.guanyangyi.passwordbook.base.BaseVM
@@ -18,6 +20,9 @@ class SetInitPasswordsActivity: BaseActivity<SetInitPasswordsViewModel>() {
     override fun initViewModel(): SetInitPasswordsViewModel? = SetInitPasswordsViewModel()
 
     override fun initData() {
+    }
+
+    override fun initView() {
         mEditText = findViewById(R.id.id_password_editText)
 
         findViewById<Button>(R.id.id_sure).setOnClickListener {

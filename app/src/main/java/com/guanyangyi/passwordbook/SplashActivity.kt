@@ -1,5 +1,6 @@
 package com.guanyangyi.passwordbook
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -42,6 +43,9 @@ class SplashActivity: BaseActivity<SplashViewModel> () {
         window.decorView.postDelayed({
             mViewModel?.startQuery()
         }, 500)
+    }
+
+    override fun initView() {
     }
 
 }
